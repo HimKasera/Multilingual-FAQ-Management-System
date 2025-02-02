@@ -198,14 +198,6 @@ heroku create
 git push heroku main
 ```
 
-## License
-MIT
-
-## Support
-For support, email [pa7846665@example.com]
-
-## Authors
-- Your Name (@Prakash333singh)
 
 ## Acknowledgments
 - Google Translate API
