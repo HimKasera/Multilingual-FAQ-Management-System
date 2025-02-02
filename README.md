@@ -29,7 +29,7 @@ A robust backend system for managing Frequently Asked Questions (FAQs) with mult
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/multilingual-faq-backend.git
+https://github.com/HimKasera/Multilingual-FAQ-Management-System.git
 cd multilingual-faq-backend
 ```
 
