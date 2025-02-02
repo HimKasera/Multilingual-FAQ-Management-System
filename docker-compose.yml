@@ -1,0 +1,41 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URI=mongodb+srv://pa7846665:code_runner@cluster0.svjeyg1.mongodb.net/faq_db?retryWrites=true&w=majority&appName=Cluster0
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - JWT_SECRET=fawqoweeqpeiejenrkltoyk
+      - ADMIN_USERNAME=admin
+      - ADMIN_PASSWORD=Prakash@12334
+      - NODE_ENV=development
+      - GOOGLE_API_KEY=AIzaSyApqrQ40ETdcoJShqhbuaBzZuHTdfxGhYk
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:
+      - mongodb
+      - redis
+
+  mongodb:
+    image: mongo:4.4
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  redis:
+    image: redis:6-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  mongodb_data:
+  redis_data:

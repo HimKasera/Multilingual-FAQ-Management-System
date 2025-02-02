@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+
+# Logs
+logs/
+*.log
+*.gz
+
+# React
+build/
+dist/
+
+# Tailwind
+*.css.map
+
+# Temporary files and folders
+*.swp
+*.swo
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS-specific
+*.DS_Store
